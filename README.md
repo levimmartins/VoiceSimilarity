@@ -9,7 +9,9 @@ This project is a **voice similarity detection application** that analyzes audio
 The app uses **audio embeddings** from two models:
 
 1. **VostralRealTime** – Provides rich real-time audio representations capturing prosodic and acoustic features.
+- model: mistralai/Voxtral-Mini-4B-Realtime-2602
 2. **WavLM** – A state-of-the-art speech representation model that encodes voice characteristics.
+- model: microsoft/wavlm-base-plus-sv
 
 The embeddings from these two models are **concatenated** to form a combined feature vector for each audio clip. This concatenation leverages complementary strengths from both models: Vostral captures fine-grained prosodic cues, while WavLM captures broader speech patterns.
 
