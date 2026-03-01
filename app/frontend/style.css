@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+h1 { text-align: center; color: #333; margin-bottom: 30px; }
+
+.container {
+    display: flex;
+    gap: 40px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.left-panel, .right-panel {
+    flex: 1;
+}
+
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="file"] { margin-bottom: 15px; }
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover { background-color: #0056b3; }
+
+#result { margin-top: 20px; font-weight: bold; }
+
+#loadingContainer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #007bff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin { 0% { transform: rotate(0deg);} 100% { transform: rotate(360deg);} }
+
+canvas { margin-top: 20px; display: block; }

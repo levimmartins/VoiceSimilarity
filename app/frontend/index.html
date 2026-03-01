@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voice Similarity</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Voice Similarity Checker</h1>
+
+<div class="container">
+  <!-- Left: Form -->
+  <div class="left-panel">
+    <form id="similarityForm">
+      <label>Audio File 1:</label><br>
+      <input type="file" id="file1" accept=".wav"><br>
+
+      <label>Audio File 2:</label><br>
+      <input type="file" id="file2" accept=".wav"><br>
+
+      <button type="submit">Compute Similarity</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <!-- Right: Spinner / Circle -->
+  <div class="right-panel">
+    <div id="loadingContainer">
+      <div class="spinner"></div>
+      <div id="loadingMessage">We are analyzing your audio...</div>
+    </div>
+
+    <canvas id="similarityCircle" width="150" height="150"></canvas>
+  </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

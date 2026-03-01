@@ -1,0 +1,17 @@
+torch==2.9.1
+torchaudio==2.9.1
+transformers
+speechbrain
+librosa
+soundfile
+torchcodec==0.9
+
+fastapi
+uvicorn
+python-multipart
+requests
+
+mistral-common[soundfile]
+
+# conda install -c conda-forge ffmpeg
+

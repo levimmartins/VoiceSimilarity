@@ -41,7 +41,7 @@ Once embeddings are concatenated, the app computes the **Euclidean distance** be
 
 - Euclidean distance is used for simplicity and interpretability  
 - The system is **not intended to identify real individuals**.  
-
+- Built with FastAPI
 ---
 
 ## License
